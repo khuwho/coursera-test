@@ -1,3 +1,118 @@
-body{
+/********** Base styles **********/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+   
+* {
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title{
+    background: lightpink;
+    border: 2px solid black;
+    float: right;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    text-align: center;
+    margin-bottom: 15px;
     
 }
+.title2{
+    background: rgb(183, 79, 67);
+    border: 2px solid black;
+    color: white;
+    float: right;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.title3{
+    background: rgb(255, 246, 182);
+    border: 2px solid black;
+    float: right;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p {
+
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+    clear:right;
+
+
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+    width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+    .col-lg-4 {
+        float: left;
+        border: 2px solid rgb(0, 0, 0);
+        margin-left: 15px;
+        background-color: grey;
+        
+    }
+
+    
+    .col-lg-4 {
+        width: 32%;
+    }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 950px) and (max-width: 1199px) {
+
+    .col-md-6,
+    .col-md-12 {
+        float: left;
+        border: 2px solid rgb(0, 0, 0);
+        margin-left: 15px;
+        background-color: grey;
+        margin-bottom: 15px;
+    }
+
+    .col-md-6 {
+        width: 48%;
+    }
+
+    .col-md-12{
+        width: 97%;
+    }
+}
+
+/********** Small devices only **********/
+@media (max-width: 950px) {
+    .col-sm-11 {
+        float: left;
+        border: 2px solid rgb(0, 0, 0);
+        margin-left: 15px;
+        background-color: grey;
+        margin-bottom: 15px;
+    }
+
+    .col-sm-11 {
+        width: 91.66%;
+      }
+    }
